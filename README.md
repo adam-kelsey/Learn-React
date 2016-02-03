@@ -1,1 +1,2 @@
 # Learn-React
+# The purpose of this repo is to learn React.js. I will be following a guide that teaches React.js on top of Rails while making a mock expense tracking app. This is just the first of many!
