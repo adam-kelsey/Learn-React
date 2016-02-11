@@ -3,11 +3,14 @@
     title: ''
     date: ''
     amount: ''
+
+  valid: ->
+    @state.title && @state.date && @state.amount
+
   handleChange: (e) ->
     name = e.target.name
     @setState "#{ name }": e.target.value
-  valid: ->
-    @state.title && @state.date && @state.amount
+
   handleSubmit: (e) ->
     e.preventDefault()
     $.post '', { record: @state }, (data) =>
